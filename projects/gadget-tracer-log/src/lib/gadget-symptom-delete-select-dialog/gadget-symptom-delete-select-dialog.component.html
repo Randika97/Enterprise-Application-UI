@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-header class="card-title-text">
+    <mat-card-title>
+      REMOVE SYMPTOM
+    </mat-card-title>
+    <div fxFlex></div>
+    <mat-icon class="mat-close-button" (click)="close()">close</mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <div class="announcement-msg">
+        <div>
+          <mat-icon class="announcement-icon">announcements</mat-icon>
+        </div>
+        <div>
+          {{message}}
+        </div>
+      </div>
+      <div fxLayout="row" class="actions mat-card-actions">
+        <button mat-flat-button color="primary" (click)="close()" cdkFocusInitial>No </button>
+        <button mat-flat-button color="primary" [mat-dialog-close]="true">Yes</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

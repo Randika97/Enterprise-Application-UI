@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-header class="card-title-text" fxLayoutAlign="space-between">
+    <mat-card-title>{{isSuccess ? 'SUCCESS' : 'FAILED'}}</mat-card-title>
+    <div fxFlex></div>
+    <mat-icon class="mat-close-button" (click)="close()">close</mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <div mat-dialog-content *ngIf="!isSuccess" class="appearance-error">
+      <mat-icon class="style-icon" style="font-size:3em;">error</mat-icon>
+      <p class="message-display">{{messageDisplay}}</p>
+    </div>
+    <div mat-dialog-content *ngIf="isSuccess" class="appearance">
+      <mat-icon class="style-icon" style="font-size:3em;">check_circle</mat-icon>
+      <p class="message-display">{{messageDisplay}}</p>
+    </div>
+    <div mat-dialog-actions class="center-option">
+      <button mat-flat-button color="primary" fxFlex="20%" (click)="close()">OK</button>
+    </div>
+  </mat-card-content>
+</mat-card>

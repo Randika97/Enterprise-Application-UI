@@ -1,0 +1,34 @@
+.mat-card-actions {
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+.mat-card-actions .mat-flat-button {
+    margin: 0 4px;
+    border-radius: 5px !important;
+    text-transform: uppercase;
+}
+
+.announcement-icon {
+    font-size: 50px;
+}
+
+.announcement-msg {
+    text-align: center;
+    border: 0.1em solid red;
+    color: red;
+    padding: 20px;
+    text-transform: uppercase;
+
+}
+
+.mat-close-button {
+    cursor: pointer;
+    color: #05a2ac;
+    font-weight: 600;
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(0.7);
+    }
+}
